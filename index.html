@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>MyList</title>
+</head>
+<body>
+    
+    <Section class="main-section">
+        <div class="left-container">
+            <div class="title-description-container">
+                <h1 class="main-title">MyList 📚</h1>
+                <p class="main-description">Coloca tu tarea a realizar y dale al boton!</p>
+            </div>
+            <div class="form-container">
+                <form class="form1" onsubmit="addTask(event)">
+                    <input type="text" name="taskText" id="main-imput" placeholder="Coloca tu tarea aqui" autocomplete="off"> 
+                    <button id="main-button" type="submit" on>Subir!</button>
+                </form>
+            </div>
+        </div>
+        <div id="task-container"></div>
+    </Section>  
+
+    
+</body>
+</html>
